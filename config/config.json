@@ -1,7 +1,9 @@
-  development: {
+{
+"development": {
     username: 'your_username',
     password: 'your_password',
     database: 'your_db_name',
     host: 'host_address',
     dialect: "postgres"
   }
+}

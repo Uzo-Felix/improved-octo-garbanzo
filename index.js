@@ -1,11 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swaggerConfig');
 const { sequelize } = require('./models');
 
 app.use(express.json());
+app.use(cors())
 
 app.use('/auth', require('./routes/authRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));

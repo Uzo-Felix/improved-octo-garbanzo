@@ -1,10 +1,14 @@
 {
-    "development": {
-      "username": "uzo",
-      "password": "uzochukwu",
-      "database": "hng",
-      "host": "127.0.0.1",
-      "dialect": "postgres"
-    }
+  "development": {
+    "dialect": "sqlite",
+    "storage": "./db.development.sqlite"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": ":memory:"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "./db.production.sqlite"
   }
-  
+}

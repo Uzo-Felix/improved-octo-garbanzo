@@ -4,7 +4,7 @@ const { sequelize, User, Organization } = require('../models');
 
 describe('Auth Endpoints', () => {
   beforeAll(async () => {
-    await sequelize.sync({ alter: true });
+    await sequelize.sync({ force: true });
   });
 
   afterAll(async () => {

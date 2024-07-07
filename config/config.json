@@ -1,9 +1,10 @@
 {
-"development": {
-    username: 'your_username',
-    password: 'your_password',
-    database: 'your_db_name',
-    host: 'host_address',
-    dialect: "postgres"
+    "development": {
+      "username": "your_username",
+      "password": "your_password",
+      "database": "your_db",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    }
   }
-}
+  
